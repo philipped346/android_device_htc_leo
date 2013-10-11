@@ -43,7 +43,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
-BOARD_KERNEL_BASE := 0x11800000
+BOARD_KERNEL_BASE := 0x11808000
 BOARD_KERNEL_NEW_PPPOX := true
 
 # Legacy
