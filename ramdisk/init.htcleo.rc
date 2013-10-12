@@ -212,7 +212,7 @@ service dhcpcd_wlan0 /system/bin/dhcpcd -aABKL
     disabled
     oneshot
 
-service dhcpcd_bnep0 /system/bin/dhcpcd -aABKL
+service dhcpcd_bt-pan0 /system/bin/dhcpcd -aABKL
     class main
     disabled
     oneshot
