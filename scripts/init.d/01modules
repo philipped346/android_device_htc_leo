@@ -5,4 +5,8 @@ sleep 1
 insmod /system/lib/modules/cifs.ko
 insmod /system/lib/modules/bcm4329.ko
 insmod /system/lib/modules/kineto_gan.ko
+# for mobile network (3G, HSDPA)
+if [ ! -f /system/ppp ]; then
+  insmod /system/lib/modules/msm_rmnet.ko
+fi
 echo "+++ Modules Loaded +++";
