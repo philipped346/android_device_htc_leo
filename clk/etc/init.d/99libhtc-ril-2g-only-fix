@@ -1,0 +1,11 @@
+#!/system/bin/sh
+# Required by Passion's libhtc_ril.so: HTC-RIL 2.2.1001G (Jul 16 2010,21:52:13)
+# to fix "Use 2G only networks" feature in settings
+
+if [ ! -f /data/misc/rild_ril.prefer.network.select-type ]; then
+  touch /data/misc/rild_ril.band.select-mode
+  touch /data/misc/rild_ril.mosms.service
+  touch /data/misc/rild_ril.prefer.network.select-type
+  chown radio.radio /data/misc/rild_ril.*
+  chmod 660 /data/misc/rild_ril.*
+fi
