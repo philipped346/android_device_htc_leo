@@ -79,6 +79,7 @@ PRODUCT_COPY_FILES += \
 	device/htc/leo/clk/default.prop:system/default.prop \
 	device/htc/leo/clk/ppp:system/ppp \
 	device/htc/leo/clk/etc/init.d/97ppp:system/etc/init.d/97ppp \
+	device/htc/leo/clk/etc/init.d/97ppp:system/etc/init.d/99libhtc-ril-2g-only-fix \
 	device/htc/leo/clk/etc/ppp/active:system/etc/ppp/active \
 	device/htc/leo/clk/etc/ppp/chap-secrets:system/etc/ppp/chap-secrets \
 	device/htc/leo/clk/etc/ppp/ip-down:system/etc/ppp/ip-down \
