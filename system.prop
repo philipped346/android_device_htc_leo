@@ -48,3 +48,9 @@ dalvik.vm.heapgrowthlimit=48m
 dalvik.vm.heapstartsize=5m 
 dalvik.vm.dexopt-data-only=1 
 dalvik.vm.verify-bytecode=false
+
+# GOOGLE DNS
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
