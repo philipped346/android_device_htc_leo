@@ -81,7 +81,7 @@ on boot
 
     # for wireless modem
     chown system system /sys/module/serial/parameters/modem_enabled
-    chown system.system /dev/cpu_dma_latency
+    chown system system /dev/cpu_dma_latency
     chown system system /dev/smd0
     chown system system /dev/smd1
     chown system system /dev/smd9
