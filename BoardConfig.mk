@@ -58,8 +58,8 @@
   BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
   BOARD_KERNEL_BASE := 0x11800000
   BOARD_KERNEL_NEW_PPPOX := true
-  # only for aokp
-  TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+  # only for carbon rom
+  TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
 
 
 
