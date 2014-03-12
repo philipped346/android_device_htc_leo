@@ -15,7 +15,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),htcleo)
+ifeq ($(BOARD_VENDOR),htc)
+ifeq ($(TARGET_BOARD_PLATFORM),qsd8k)
 
 # HAL module implemenation, not prelinked, and stored in
 # hw/<SENSORS_HARDWARE_MODULE_ID>.<ro.product.board>.so
@@ -42,4 +43,5 @@ LOCAL_PRELINK_MODULE := false
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # TARGET_BOOTLOADER_NAME
+endif
+endif
