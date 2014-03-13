@@ -159,7 +159,7 @@
 # TARGET_USERIMAGES_USE_EXT4 := true
   BOARD_FLASH_BLOCK_SIZE := 131072
 # Fix set metadata on yaffs2 use old set permission
-  USE_SET_METADATA := false
+  SKIP_SET_METADATA := true
 
 
 
