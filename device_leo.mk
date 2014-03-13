@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 # GSM APN list
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
+   # vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
 # Scripts
 PRODUCT_COPY_FILES += \
 	device/htc/leo/scripts/init.d/01modules:system/etc/init.d/01modules \
+	device/htc/leo/scripts/init.d/02usb_tethering:system/etc/init.d/02usb_tethering \
 	device/htc/leo/scripts/init.d/10mic_level:system/etc/init.d/10mic_level 
 
 # Keylayouts
@@ -169,8 +170,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.composition.type=mdp \
     ro.bq.gpu_to_cpu_unsupported=1 \
-    debug.gr.numframebuffers=2 \
-    debug.egl.recordable.rgba8888=1
+    debug.gr.numframebuffers=2
 
 #
 # Dalvik Properties
