@@ -59,8 +59,7 @@
   BOARD_KERNEL_BASE := 0x11800000
   BOARD_KERNEL_NEW_PPPOX := true
   # only for carbon rom
-  TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
-
+  TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
 
 
 # bootanimation
