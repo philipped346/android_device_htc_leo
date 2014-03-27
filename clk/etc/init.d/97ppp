@@ -1,5 +1,5 @@
 #!/system/bin/sh
-
+mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 chown 1001.1001 /dev/smd1;
 touch /etc/ppp/active;
 touch /etc/ppp/pap-secrets;
@@ -12,4 +12,5 @@ chmod 775 /system/etc/ppp/*
 chown 0.0 /system/bin/pppd;
 chmod 4755 /system/bin/pppd;
 #/system/bin/pppd /dev/smd1 defaultroute;
+mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system
 
