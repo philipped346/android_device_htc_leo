@@ -5,9 +5,10 @@ on early-init
 # enable adb early
     write /sys/class/android_usb/android0/iSerial 0123456789ABCDEF
     
+on init   
     export EXTERNAL_STORAGE /storage/sdcard0
-    mkdir /storage 0050 system sdcard_r
-    mkdir /storage/sdcard0 0000 system system
+    mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
+    mkdir /storage/sdcard0 0700 root root
     symlink /storage/sdcard0 /sdcard
     symlink /storage/sdcard0 /mnt/sdcard    
 
@@ -203,6 +204,11 @@ on boot
 #
 # Services Start here
 #
+
+#sdcard daemon
+service fuse_sdcard0 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard0 /storage/sdcard0
+    class late_start
+    disabled
 
 service akmd /system/bin/akmd
     class main
