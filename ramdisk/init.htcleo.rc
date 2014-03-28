@@ -5,17 +5,12 @@ on early-init
 # enable adb early
     write /sys/class/android_usb/android0/iSerial 0123456789ABCDEF
 
-on init
-
-    mkdir /storage 0775 system sdcard_r
+on init   
+    export EXTERNAL_STORAGE /storage/sdcard0
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
     mkdir /storage/sdcard0 0700 root root
-
-# for backwards compatibility
-     symlink /storage/sdcard0 /sdcard
-     symlink /storage/sdcard0 /mnt/sdcard
-
-     export EXTERNAL_STORAGE /storage/sdcard0  
+    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard0 /mnt/sdcard
 
 on fs
     # Mount all partitions
