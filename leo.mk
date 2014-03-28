@@ -9,3 +9,7 @@ $(call inherit-product, device/htc/leo/cm.mk)
 
 #skip asserts for now
 TARGET_OTA_ASSERT_SKIP := true
+
+PRODUCT_COPY_FILES +=  \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
+
