@@ -167,7 +167,11 @@
   BOARD_USES_LEGACY_RIL := true
 
 # USB
-  TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
+  # 2.6.x kernel
+  # TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
+  
+  # 3.0.x kernel
+  TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun0/file
 
 # Recovery
   TARGET_RECOVERY_FSTAB = device/htc/leo/ramdisk/fstab.htcleo
