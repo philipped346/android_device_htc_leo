@@ -73,7 +73,7 @@
   BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/leo/bluetooth/include
 
 # Qcom
-  TARGET_USES_ION := true
+  # TARGET_USES_ION := true
   BOARD_USES_QCOM_HARDWARE := true
   COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
   COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
@@ -168,10 +168,10 @@
 
 # USB
   # 2.6.x kernel
-  # TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
+    TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
   
   # 3.0.x kernel
-  TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun0/file
+    #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun0/file
 
 # Recovery
   TARGET_RECOVERY_FSTAB = device/htc/leo/ramdisk/fstab.htcleo
