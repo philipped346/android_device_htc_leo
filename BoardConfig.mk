@@ -59,7 +59,7 @@
   BOARD_KERNEL_BASE := 0x11800000
   BOARD_KERNEL_NEW_PPPOX := true
   # only for aokp
-  TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+  # TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 
 
@@ -168,10 +168,10 @@
 
 # USB
   # 2.6.x kernel
-    TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
+    #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
   
   # 3.0.x kernel
-    #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun0/file
+    TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun0/file
 
 # Recovery
   TARGET_RECOVERY_FSTAB = device/htc/leo/ramdisk/fstab.htcleo
