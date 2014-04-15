@@ -108,7 +108,7 @@ PRODUCT_LOCALES += hdpi mdpi
 # QSD8K Commomn Stuff
 
 # English locale
-PRODUCT_LOCALES := en
+# PRODUCT_LOCALES := en
 
 # High Density art
 PRODUCT_AAPT_CONFIG := normal hdpi
