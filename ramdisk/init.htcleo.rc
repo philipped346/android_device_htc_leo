@@ -30,6 +30,9 @@ on post-fs-data
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
     symlink /system/vendor/firmware /vendor/firmware
+    
+    # create directory for hwui.use.blacklist
+    mkdir /data/local/hwui.deny 0755 system system   
 
     setprop vold.post_fs_data_done 1
 
