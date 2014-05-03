@@ -59,3 +59,8 @@ net.dns2=8.8.4.4
 hwui.render_dirty_regions=false
 hwui.use.blacklist=true
 ro.sys.force_full_hwa=true
+
+#hwui
+hwui.render_dirty_regions=false
+hwui.use.blacklist=true
+ro.sys.force_full_hwa=true
