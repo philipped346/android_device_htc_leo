@@ -1,0 +1,13 @@
+## TWRP fstab for HTC Leo
+
+# mount point				fstype				device					options (length for cryptfs encryption footer)
+
+/cache						yaffs2				cache					flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset
+/misc						mtd					misc					flags=backup=1;canbewiped;wipeingui
+/recovery					mtd					recovery				flags=backup=1;canbewiped;wipeingui
+/data						yaffs2				userdata				flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset
+/boot						yaffs2				boot					flags=backup=1;canbewiped;wipeingui
+/system						yaffs2				system					flags=backup=1;canbewiped;wipeingui
+/sdcard						vfat				/dev/block/mmcblk0p1	/dev/block/mmcblk0;storage;wipeingui;removable
+/sd-ext						auto				/dev/block/mmcblk0p2	storage;wipeingui;removable
+/sdext2						auto				/dev/block/mmcblk0p3	storage;wipeingui;removable

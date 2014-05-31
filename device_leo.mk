@@ -36,10 +36,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
         device/htc/leo/ramdisk/logo.rle:root/logo.rle \
         device/htc/leo/ramdisk/fstab.htcleo:root/fstab.htcleo \
-	device/htc/leo/ramdisk/init.htcleo.rc:root/init.htcleo.rc \
-	device/htc/leo/ramdisk/init.htcleo.usb.rc:root/init.htcleo.usb.rc \
+		device/htc/leo/ramdisk/init.htcleo.rc:root/init.htcleo.rc \
+		device/htc/leo/ramdisk/init.htcleo.usb.rc:root/init.htcleo.usb.rc \
         device/htc/leo/ramdisk/init.power.rc:root/init.power.rc \
-	device/htc/leo/ramdisk/ueventd.htcleo.rc:root/ueventd.htcleo.rc
+		device/htc/leo/ramdisk/ueventd.htcleo.rc:root/ueventd.htcleo.rc \
+        device/htc/leo/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
 	
 	
         
