@@ -55,7 +55,3 @@ net.ppp0.dns2=8.8.4.4
 net.dns1=8.8.8.8
 net.dns2=8.8.4.4
 
-#hwui
-hwui.render_dirty_regions=false
-hwui.use.blacklist=true
-ro.sys.force_full_hwa=true
