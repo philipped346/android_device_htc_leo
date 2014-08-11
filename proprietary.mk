@@ -70,8 +70,8 @@ PRODUCT_COPY_FILES += \
 	device/htc/leo/proprietary/lib/hw/gps.htcleo.so:system/lib/hw/gps.htcleo.so
 
 # HWA
-PRODUCT_COPY_FILES += \
-	device/htc/leo/proprietary/app/HwaSettings.apk:/system/app/HwaSettings.apk
+#PRODUCT_COPY_FILES += \
+#	device/htc/leo/proprietary/app/HwaSettings.apk:/system/app/HwaSettings.apk
 
 # Media
 PRODUCT_COPY_FILES += \
