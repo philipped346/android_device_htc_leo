@@ -66,6 +66,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    debug.sf.hw=0
 
+# Fix black browser using old webkit for pmem
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.webview.provider=classic
+
 # Scripts
 PRODUCT_COPY_FILES += \
 	device/htc/leo/scripts/init.d/01modules:system/etc/init.d/01modules \
