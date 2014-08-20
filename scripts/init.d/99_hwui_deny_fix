@@ -15,10 +15,10 @@ fi
 Files="$Files $DIR/com.google.android.youtube"
 
 # Fix the black box for KitKat
-Files="$Files $DIR/com.android.browser"
-Files="$Files $DIR/com.android.htmlviewer"
-Files="$Files $DIR/com.android.email"
-Files="$Files $DIR/com.google.android.gm"
+# Files="$Files $DIR/com.android.browser"
+# Files="$Files $DIR/com.android.htmlviewer"
+# Files="$Files $DIR/com.android.email"
+# Files="$Files $DIR/com.google.android.gm"
 
 for File in $Files
 do
