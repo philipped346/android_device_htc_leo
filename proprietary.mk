@@ -65,8 +65,9 @@ PRODUCT_COPY_FILES += \
     device/htc/leo/proprietary/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 # GPS
-# PRODUCT_COPY_FILES += \
-#	device/htc/leo/proprietary/lib/libgps.so:system/lib/libgps.so
+PRODUCT_COPY_FILES += \
+	device/htc/leo/proprietary/lib/libgps.so:system/lib/libgps.so \
+	device/htc/leo/proprietary/lib/hw/gps.htcleo.so:system/lib/hw/gps.htcleo.so
 
 # HWA
 PRODUCT_COPY_FILES += \
