@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
     device/htc/leo/proprietary/etc/AudioBTID.csv:system/etc/AudioBTID.csv \
     device/htc/leo/proprietary/lib/libhtc_acoustic.so:system/lib/libhtc_acoustic.so 
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    device/htc/leo/proprietary/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Camera
 PRODUCT_COPY_FILES += \
     device/htc/leo/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
@@ -71,7 +75,7 @@ PRODUCT_COPY_FILES += \
 
 # HWA
 #PRODUCT_COPY_FILES += \
-#	device/htc/leo/proprietary/app/HwaSettings.apk:/system/app/HwaSettings.apk
+	device/htc/leo/proprietary/app/HwaSettings.apk:/system/app/HwaSettings.apk
 
 # Media
 PRODUCT_COPY_FILES += \

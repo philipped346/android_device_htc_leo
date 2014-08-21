@@ -74,7 +74,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	device/htc/leo/scripts/init.d/01modules:system/etc/init.d/01modules \
 	device/htc/leo/scripts/init.d/02usb_tethering:system/etc/init.d/02usb_tethering \
-	device/htc/leo/scripts/init.d/10mic_level:system/etc/init.d/10mic_level 
+	device/htc/leo/scripts/init.d/10mic_level:system/etc/init.d/10mic_level \
+	device/htc/leo/scripts/init.d/99_hwui_deny_fix:system/etc/init.d/99_hwui_deny_fix
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
