@@ -7,3 +7,5 @@ $(call inherit-product, device/htc/leo/full_leo.mk)
 
 PRODUCT_NAME := ev_leo
 PRODUCT_DEVICE := leo
+
+BOOT_ANIMATION_SIZE := wvga
