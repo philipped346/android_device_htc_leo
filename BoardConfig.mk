@@ -30,7 +30,8 @@
 # fix for twrp build
   DEVICE_RESOLUTION := 480x800
 
-  # TARGET_SPECIFIC_HEADER_PATH := device/htc/leo/include/
+# header
+  TARGET_SPECIFIC_HEADER_PATH := device/htc/leo/include/
 
 # Board/CPU
   TARGET_NO_BOOTLOADER := true
