@@ -144,20 +144,16 @@ PRODUCT_PACKAGES += \
     gralloc.qsd8k \
     hwcomposer.qsd8k
 
-# QCOM OMX
-#PRODUCT_PACKAGES += \
-#	libstagefrighthw \
-#	libOmxCore \
-#	libmm-omxcore \
-#       libdivxdrmdecrypt \
-#	libOmxVdec \
-	#libOmxVenc
+
 # Omx
 PRODUCT_PACKAGES += \
-	libOmxCore \
-        libstagefrighthw
-	# libOmxVdec \
-	# libOmxVidEnc	
+    libmm-omxcore \
+    libOmxCore \
+    libOmxVenc \
+    libOmxVdec \
+    libstagefrighthw \
+    libc2dcolorconvert \
+    libdashplayer
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
