@@ -60,7 +60,12 @@ PRODUCT_COPY_FILES += \
 
 # media config xml file
 PRODUCT_COPY_FILES += \
+	device/htc/leo/configs/media_codecs.xml:system/etc/media_codecs.xml \
 	device/htc/leo/configs/media_profiles.xml:system/etc/media_profiles.xml
+
+# Config audio policy
+PRODUCT_COPY_FILES += \
+       device/htc/leo/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # Fix graphic crash
 #PRODUCT_PROPERTY_OVERRIDES += \
@@ -117,11 +122,6 @@ PRODUCT_LOCALES += hdpi mdpi
 # High Density art
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-# Configs
-PRODUCT_COPY_FILES += \
-    device/htc/leo/media_codecs.xml:system/etc/media_codecs.xml \
-    device/htc/leo/audio_policy.conf:system/etc/audio_policy.conf
 
 #
 # Required Packages
